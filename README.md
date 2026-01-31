@@ -38,7 +38,7 @@ from langchain_google_genai import ChatGoogleGenerativeAI
 import os
 
 os.environ["GOOGLE_API_KEY"] = "your-api-key"
-llm = ChatGoogleGenerativeAI(model="gemini-pro", temperature=0)
+llm = ChatGoogleGenerativeAI(model="gemini-2.5-flash", temperature=0)
 
 agent = create_task_oriented_agent(llm)
 result = run_task_oriented_workflow(agent, "cardiologists")

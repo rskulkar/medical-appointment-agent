@@ -12,7 +12,7 @@ from medical_appointment_agent import create_goal_oriented_agent
 api_key = getpass("Enter your Google API Key: ")
 os.environ["GOOGLE_API_KEY"] = api_key
 
-llm = ChatGoogleGenerativeAI(model="gemini-pro", temperature=0)
+llm = ChatGoogleGenerativeAI(model="gemini-2.5-flash", temperature=0)
 agent = create_goal_oriented_agent(llm)
 
 # Single goal request
